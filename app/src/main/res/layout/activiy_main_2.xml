@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AsyncTasksUsingThreadPoolAndSerialExecutors">
+
+    <EditText
+        android:id="@+id/et_no_of_async_tasks"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="No of Async Tasks" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_thread_pool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="THREAD_POOL_EXECUTOR" />
+
+        <RadioButton
+            android:id="@+id/rb_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="SERIAL_EXECUTOR" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="start async task" />
+
+
+    <Button
+        android:id="@+id/btn_stop_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop async task" />
+</LinearLayout>
